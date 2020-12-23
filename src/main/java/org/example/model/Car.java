@@ -2,11 +2,13 @@ package org.example.model;
 
 public class Car {
 
-    private int id;
-    private int year;
-    private String model;
-    private String color;
-    private long motorSize;
+
+        private int id;
+        private int year;
+        private String model;
+        private String color;
+        private long motorSize;
+
 
     public Car(int id, int year, String model, String color, long motorSize) {
         this.id = id;
@@ -15,6 +17,7 @@ public class Car {
         this.color = color;
         this.motorSize = motorSize;
     }
+
 
     public int getId() {
         return id;
@@ -48,13 +51,11 @@ public class Car {
         this.color = color;
     }
 
-    public long isMotorSize() {
+    public long getMotorSize() {
         return motorSize;
     }
 
     public void setMotorSize(long motorSize) {
         this.motorSize = motorSize;
     }
-
-
 }
