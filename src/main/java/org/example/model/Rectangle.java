@@ -2,25 +2,28 @@ package org.example.model;
 
 public class Rectangle {
 
-    private double high;
+    private double height;
     private double width;
 
-    public Rectangle(double high) {
-        this.high = high;
-
+    public Rectangle() {
     }
 
-    public Rectangle(double high, double width) {
-        this.high = high;
+    public Rectangle(double height, double width) {
+        this.height = height;
         this.width = width;
     }
 
-    public double getHigh() {
-        return high;
+    public double getArea() {
+return height*width;
+
     }
 
-    public void setHigh(double high) {
-        this.high = high;
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
     }
 
     public double getWidth() {
@@ -31,3 +34,4 @@ public class Rectangle {
         this.width = width;
     }
 }
+
